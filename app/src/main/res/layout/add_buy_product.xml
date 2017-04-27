@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shkulant.smarttobuylist.AddBuyProductActivity">
+
+    <EditText
+        android:id="@+id/text_name_buy_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_amount_buy_add"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/text_amount_buy_add"
+        android:layout_marginTop="83dp"
+        android:ems="10"
+        android:hint="Product..."
+        android:inputType="textPersonName"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/text_amount_buy_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_name_buy_add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Amount..."
+        android:inputType="numberDecimal"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/text_measure_buy_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_amount_buy_add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="Measure..."
+        android:inputType="textPersonName"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_confirm_buy_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_measure_buy_add"
+        android:layout_alignStart="@+id/text_measure_buy_add"
+        android:layout_below="@+id/text_measure_buy_add"
+        android:layout_marginTop="50dp"
+        android:text="Confirm"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_cancel_buy_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_confirm_buy_add"
+        android:layout_alignBottom="@+id/btn_confirm_buy_add"
+        android:layout_alignEnd="@+id/text_measure_buy_add"
+        android:layout_alignRight="@+id/text_measure_buy_add"
+        android:text="Cancel"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_delete_buy_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_confirm_buy_add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Delete"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/spinner_buy"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_above="@+id/text_amount_buy_add"
+        android:layout_alignTop="@+id/text_name_buy_add"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/text_name_buy_add"
+        android:spinnerMode="dialog" />
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.shkulant.smarttobuylist.AddProductActivity">
+
+    <EditText
+        android:id="@+id/text_product_to_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Product name..."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/text_defamount_to_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_product_to_add"
+        android:layout_alignStart="@+id/text_product_to_add"
+        android:layout_below="@+id/text_product_to_add"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Default Amount..."
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/text_measure_to_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_defamount_to_add"
+        android:layout_alignRight="@+id/text_defamount_to_add"
+        android:layout_below="@+id/text_defamount_to_add"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Measure..."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/text_storage_to_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_measure_to_add"
+        android:layout_alignRight="@+id/text_measure_to_add"
+        android:layout_below="@+id/text_measure_to_add"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Time Of Storage..."
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_confirm_to_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_storage_to_add"
+        android:layout_alignStart="@+id/text_storage_to_add"
+        android:layout_below="@+id/text_storage_to_add"
+        android:layout_marginTop="51dp"
+        android:text="Confirm" />
+
+    <Button
+        android:id="@+id/btn_cancel_to_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_confirm_to_add"
+        android:layout_alignBottom="@+id/btn_confirm_to_add"
+        android:layout_alignEnd="@+id/text_storage_to_add"
+        android:layout_alignRight="@+id/text_storage_to_add"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/btn_delete_to_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_confirm_to_add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Delete"
+        android:visibility="gone" />
+</RelativeLayout>

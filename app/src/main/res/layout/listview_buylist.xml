@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_product_buy"
+        android:layout_width="100sp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_amount_buy"
+        android:layout_width="80sp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/text_product_buy"
+        android:layout_toRightOf="@+id/text_product_buy"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_measure_buy"
+        android:layout_width="80sp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/checkBox_buy"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/text_amount_buy"
+        android:layout_toRightOf="@+id/text_amount_buy"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_buy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/text_measure_buy"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/text_id_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBox_buy"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/checkBox_buy"
+        android:layout_toRightOf="@+id/checkBox_buy"
+        android:visibility="invisible" />
+
+</RelativeLayout>
